@@ -1,0 +1,40 @@
+PER EQU 0x400E0E00
+SODR EQU 0x400E0E30
+CODR EQU 0x400E0E34
+OER EQU 0x400E0E10
+PDSR EQU 0x400E0E3C
+ISR EQU 0x400E0E4C
+IER EQU 0x400E0E40
+	
+	AREA    RESET, DATA, READONLY
+    EXPORT  __Vectors
+
+__Vectors	DCD     PIOA_IRQHandler
+	
+	AREA mycode, CODE, READONLY
+	EXPORT __main
+	ENTRY
+
+PIOA_IRQHandler PROC
+	IMPORT interupt_handler
+	LDR R0, =interupt_handler
+	BLX R0
+	ENDP
+	
+
+__main
+	LDR R4, =2_111111100
+	
+	LDR R5,=PER
+	STR R4, [R5]
+	
+	LDR R5,=OER
+	STR R4, [R5]
+	MOV R9, #0 ; last clock number
+	MOV R8, #0 ; counter
+	
+	LDR R5, =IER ; enable interrupt
+	LDR R4, =2_10
+	STR R4, [R5]
+	
+here B here
