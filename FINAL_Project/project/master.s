@@ -5,11 +5,11 @@ PIO_CODR equ 0x400E0E34
 PIO_OER equ  0x400E0E10 
 PIO_PDSR equ 0x400E0E3C
 PIO_ISR equ  0x400E0E4C
-		area mycode, code, readonly
+		area master, code, readonly
 		export __main
 		entry
 __main
-	mov r12,#1 ;counter for clock
+	mov R12,#1 ;counter for clock
 	LDR R4, =2_1111100000000000
 	LDR R5,=PIO_PER ;enable pio
 	STR R4, [R5]
@@ -20,140 +20,137 @@ loop
 	; select slaves
 	LDR R5, =PIO_ISR ;interupt service routin selector
 	LDR R2, [R5]
-	LDR R3, =2_11100000000 ; and with this to see which logix gate is on 
-	AND R2, R2, R3 ; mask to get wanted bits
-	LSL R2, R2, #5
+	LDR R3, =2_111000 ; and with this to see which logix gate is on 
+	AND R2, R2, R3 ;check digits with and
+	LSL R2, R2, #22
 	LDR R5, =PIO_SODR
 	STR R2, [R5]
-	MVN R2, R2 ; not
-	LDR R3, =2_1110000000000000
-	AND R2, R2, R3 ; again masking
-	LDR R5, =PIO_CODR ; enable and clear registers
+	MVN R2, R2 ; not register 2
+	LDR R3, =2_1110000000000000000000000
+	AND R2, R2, R3 ; check digits again for new values
+	LDR R5, =PIO_CODR ; enable and clear register
 	STR R2, [R5]
-	
-	; get keypad
+	; check which key pad num is pushed
 	LDR R5, =PIO_ISR
 	LDR R2, [R5]
-	LDR R3, =2_11111111
-	AND R2, R2, R3 ; mask to get keypad bits
-	CMP R2, #2_01001000
-	BEQ zero
-	CMP R2, #2_10000100
-	BEQ one
-	CMP R2, #2_01000100
-	BEQ two
-	CMP R2, #2_00100100
-	BEQ three
-	CMP R2, #2_10000010
-	BEQ four
-	CMP R2, #2_01000010
-	BEQ five
-	CMP R2, #2_00100010
-	BEQ six
-	CMP R2, #2_10000001
-	BEQ seven
-	CMP R2, #2_01000001
-	BEQ eight
-	CMP R2, #2_00100001
-	BEQ nine
-; setting numbers ti R1 register
-zero
-	LDR R1, =0
-	MOV R9, #6 ; counter
+	LDR R3, =2_111111111111
+	AND R2, R2, R3 ; check which key pad data is on
+	CMP R2, #2_010000001000
+	BEQ num0
+	CMP R2, #2_100000000100
+	BEQ num1
+	CMP R2, #2_010000000100
+	BEQ num2
+	CMP R2, #2_001000000100
+	BEQ num3
+	CMP R2, #2_100000000010
+	BEQ num4
+	CMP R2, #2_010000000010
+	BEQ num5
+	CMP R2, #2_001000000010
+	BEQ num6
+	CMP R2, #2_100000000001
+	BEQ num7
+	CMP R2, #2_010000000001
+	BEQ num8
+	CMP R2, #2_001000000001
+	BEQ num9
+
+num0
+	LDR R1, =0 ;valuue of key pad register
+	MOV R9, #6 
 	B segmenton
-one
+num1
 	LDR R1, =1
-	MOV R9, #6 ; counter
+	MOV R9, #6
 	B segmenton
-two
+num2
 	LDR R1, =2
-	MOV R9, #6 ; counter
+	MOV R9, #6 
 	B segmenton
-three
+num3
 	LDR R1, =3
-	MOV R9, #6 ; counter
+	MOV R9, #6 
 	B segmenton
-four
+num4
 	LDR R1, =4
-	MOV R9, #6 ; counter
+	MOV R9, #6 
 	B segmenton
-five
+num5
 	LDR R1, =5
-	MOV R9, #6 ; counter
+	MOV R9, #6 
 	B segmenton
-six
+num6
 	LDR R1, =6
-	MOV R9, #6 ; counter
+	MOV R9, #6 
 	B segmenton
-seven
+num7
 	LDR R1, =7
-	MOV R9, #6 ; counter
+	MOV R9, #6 
 	B segmenton
-eight
+num8
 	LDR R1, =8
-	MOV R9, #6 ; counter
+	MOV R9, #6 
 	B segmenton
-nine
+num9
 	LDR R1, =9
-	MOV R9, #6 ; counter
+	MOV R9, #6 
 		
 segmenton
-	
 	; sending message
-	CMP R9, #0
+	SUBS R11,R9,#0
 	BEQ clock ; no message
-	CMP R9, #6
-	BNE six ; these 4 lines only for when counter is 6
-	LDR R2, =2_1000000000000
+	SUBS R11,R9,#6
+	BNE six 
+	LDR R2, =2_1000000000000000
 	LDR R5, =PIO_SODR
 	STR R2, [R5]
 	SUB R9, R9, #1
 	B clock
-six
-	CMP R9, #1
-	BNE one ; these 4 lines only for when counter is 1
+six ;SENDING LAST BIT OF DATA
+	SUBS R11, R9, #1
+	BNE one 
 	LDR R2, =2_1000000000000
 	LDR R5, =PIO_CODR
 	STR R2, [R5]
 	SUB R9, R9, #1
 	B clock
-one
+one ;SENDING FIRST BIT OF DATA 
 	ASR R1, R1, #1
 	BCS high
-	LDR R2, =2_1000000000000
+	LDR R2, =2_2_1000000000000
 	LDR R5, =PIO_CODR
 	STR R2, [R5]
 	SUB R9, R9, #1
 	B clock
-high
-	LDR R2, =2_1000000000000
+high ;SET HIGH BIT READY FOR DATA TRANSPORT
+	LDR R2, =2_100000000000000
 	LDR R5, =PIO_SODR
 	STR R2, [R5]
 	SUB R9, R9, #1
 	
 clock ;clock implementation
-	CMP R12, #1
-	BNE low
+	CMP R12, #0
+	BEQ low
 	LDR R2, =2_100000000000
 	LDR R5, =PIO_SODR
 	STR R2, [R5]
-	MOV R12, #0
+	MOV R12, #1
 	B delay
-low
+low; SENDING LOW MEANS ITS ENDING OF DARA
 	LDR R2, =2_100000000000
 	LDR R5, =PIO_CODR
 	STR R2, [R5]
-	MOV R12, #1
+	MOV R12, #0
 
 delay
 	MOV r4, #0
-	LDR r5, =0x0000C00
+	LDR r5, =100
 
-loop_delay
+delayLOOP
 	ADD r4,r4,#1
-	
-	CMP r4,r5
-	BNE loop_delay
+	SUSB R11,R4,R5
+	BNE delayLOOP
 	B loop
 
 

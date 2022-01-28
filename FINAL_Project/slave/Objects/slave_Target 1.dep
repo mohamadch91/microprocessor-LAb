@@ -1,0 +1,59 @@
+Dependencies for Project 'slave', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6140000::V6.14::ARMCLANG
+F (.\slave.s)(0x61F3B8DD)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto -c-gdwarf-3-I./RTE/_Target_1-IC:/Users/ASUS/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ASUS/AppData/Local/Arm/Packs/Atmel/SAM3N_DFP/1.0.62/include-Wa,armasm,--pd,"__UVISION_VERSION SETA 531" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"__SAM3N4A__ SETA 1"-o ./objects/slave.o)
+F (.\intrupt.s)(0x61F3B742)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto -c-gdwarf-3-I./RTE/_Target_1-IC:/Users/ASUS/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ASUS/AppData/Local/Arm/Packs/Atmel/SAM3N_DFP/1.0.62/include-Wa,armasm,--pd,"__UVISION_VERSION SETA 531" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"__SAM3N4A__ SETA 1"-o ./objects/intrupt.o)
+F (RTE\Device\ATSAM3N4A\startup_SAM3N.s)(0x57DAB85A)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto -c-gdwarf-3-I./RTE/_Target_1-IC:/Users/ASUS/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ASUS/AppData/Local/Arm/Packs/Atmel/SAM3N_DFP/1.0.62/include-Wa,armasm,--pd,"__UVISION_VERSION SETA 531" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"__SAM3N4A__ SETA 1"-o ./objects/startup_sam3n.o)
+F (RTE\Device\ATSAM3N4A\system_SAM3N.c)(0x57DAB85A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/ASUS/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/ASUS/AppData/Local/Arm/Packs/Atmel/SAM3N_DFP/1.0.62/include-D__UVISION_VERSION="531" -D_RTE_ -D_RTE_ -D__SAM3N4A__-o ./objects/system_sam3n.o -MD)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\sam3n.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\sam3n4a.h)(0x57DAB858)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5ED64B2C)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h)(0x5E8F106A)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F106A)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E83460A)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F106A)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0D0234)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0D0260)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\system_sam3n.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\adc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\chipid.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\dacc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\efc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\gpbr.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\matrix.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\pdc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\pio.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\pmc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\pwm.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\rstc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\rtc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\rtt.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\spi.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\supc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\tc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\twi.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\uart.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\usart.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\component\wdt.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\spi.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\tc0.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\twi0.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\twi1.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\pwm.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\usart0.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\adc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\dacc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\matrix.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\pmc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\uart0.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\chipid.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\uart1.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\efc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\pioa.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\piob.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\rstc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\supc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\rtt.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\wdt.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\rtc.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\instance\gpbr.h)(0x57DAB858)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Atmel\SAM3N_DFP\1.0.62\include\pio\sam3n4a.h)(0x57DAB858)

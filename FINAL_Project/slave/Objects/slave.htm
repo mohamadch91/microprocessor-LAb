@@ -1,0 +1,247 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Objects\slave.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Objects\slave.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6140002: Last Updated: Fri Jan 28 12:57:53 2022
+<BR><P>
+<H3>Maximum Stack Usage =          0 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[26]">__user_initial_stackheap</a>
+ <LI><a href="#[25]">__main</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[1]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1]">NMI_Handler</a><BR>
+ <LI><a href="#[2]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2]">HardFault_Handler</a><BR>
+ <LI><a href="#[3]">MemManage_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">MemManage_Handler</a><BR>
+ <LI><a href="#[4]">BusFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4]">BusFault_Handler</a><BR>
+ <LI><a href="#[5]">UsageFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">UsageFault_Handler</a><BR>
+ <LI><a href="#[6]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6]">SVC_Handler</a><BR>
+ <LI><a href="#[7]">DebugMon_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7]">DebugMon_Handler</a><BR>
+ <LI><a href="#[8]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[8]">PendSV_Handler</a><BR>
+ <LI><a href="#[9]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[9]">SysTick_Handler</a><BR>
+ <LI><a href="#[21]">ADC_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[21]">ADC_IRQHandler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[21]">ADC_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[4]">BusFault_Handler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[22]">DACC_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[7]">DebugMon_Handler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[10]">EFC_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[3]">MemManage_Handler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[13]">PIOA_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[14]">PIOB_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[15]">PIOC_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[f]">PMC_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[23]">PWM_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[8]">PendSV_Handler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[b]">RSTC_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[c]">RTC_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[d]">RTT_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[0]">Reset_Handler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[1a]">SPI_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[a]">SUPC_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[6]">SVC_Handler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[9]">SysTick_Handler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[24]">SystemInit</a> from system_sam3n.o(.text.SystemInit) referenced from startup_sam3n.o(.text)
+ <LI><a href="#[1b]">TC0_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[1c]">TC1_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[1d]">TC2_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[1e]">TC3_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[1f]">TC4_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[20]">TC5_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[18]">TWI0_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[19]">TWI1_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[11]">UART0_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[12]">UART1_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[16]">USART0_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[17]">USART1_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[5]">UsageFault_Handler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[e]">WDT_IRQHandler</a> from startup_sam3n.o(.text) referenced from startup_sam3n.o(RESET)
+ <LI><a href="#[25]">__main</a> from slave.o(mycode) referenced from startup_sam3n.o(.text)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>UsageFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[9]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[21]"></a>ADC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>DACC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>EFC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>PIOA_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>PIOB_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>PIOC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>PMC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[23]"></a>PWM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>RSTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>RTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>RTT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>SPI_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[a]"></a>SUPC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>TC0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>TC1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[1d]"></a>TC2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[1e]"></a>TC3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[1f]"></a>TC4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[20]"></a>TC5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>TWI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>TWI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>UART0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>UART1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[16]"></a>USART0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>USART1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>WDT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sam3n.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(RESET)
+</UL>
+<P><STRONG><a name="[26]"></a>__user_initial_stackheap</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_sam3n.o(.text), UNUSED)
+
+<P><STRONG><a name="[27]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[28]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[29]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[24]"></a>SystemInit</STRONG> (Thumb, 132 bytes, Stack size 0 bytes, system_sam3n.o(.text.SystemInit))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(.text)
+</UL>
+<P><STRONG><a name="[25]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, slave.o(mycode))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sam3n.o(.text)
+</UL><P>
+<H3>
+Local Symbols
+</H3><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

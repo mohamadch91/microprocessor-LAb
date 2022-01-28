@@ -1,0 +1,9 @@
+--cpu Cortex-M3
+".\objects\slave.o"
+".\objects\intrupt.o"
+".\objects\startup_sam3n.o"
+".\objects\system_sam3n.o"
+--strict --scatter ".\Objects\slave.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\slave.map" -o .\Objects\slave.axf
