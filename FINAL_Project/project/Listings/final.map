@@ -1,0 +1,191 @@
+Component: ARM Compiler 6.14 Tool: armlink [5db06800]
+
+==============================================================================
+
+Section Cross References
+
+    startup_sam3n.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_sam3n.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_sam3n.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_sam3n.o(RESET) refers to startup_sam3n.o(STACK) for __initial_sp
+    startup_sam3n.o(RESET) refers to startup_sam3n.o(.text) for Reset_Handler
+    startup_sam3n.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_sam3n.o(.text) refers to system_sam3n.o(.text.SystemInit) for SystemInit
+    startup_sam3n.o(.text) refers to master.o(mycode) for __main
+    startup_sam3n.o(.text) refers to startup_sam3n.o(HEAP) for Heap_Mem
+    startup_sam3n.o(.text) refers to startup_sam3n.o(STACK) for Stack_Mem
+    system_sam3n.o(.text.SystemCoreClockUpdate) refers to system_sam3n.o(.data.SystemCoreClock) for SystemCoreClock
+    system_sam3n.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_sam3n.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    system_sam3n.o(.ARM.exidx.text.SystemInit) refers to system_sam3n.o(.text.SystemInit) for [Anonymous Symbol]
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing master.o(MY_DATA), (0 bytes).
+    Removing system_sam3n.o(.text), (0 bytes).
+    Removing system_sam3n.o(.text.SystemCoreClockUpdate), (256 bytes).
+    Removing system_sam3n.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing system_sam3n.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing system_sam3n.o(.data.SystemCoreClock), (4 bytes).
+
+6 unused section(s) (total 276 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
+    RTE/Device/ATSAM3N4A/startup_SAM3N.s     0x00000000   Number         0  startup_sam3n.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    master.s                                 0x00000000   Number         0  master.o ABSOLUTE
+    system_SAM3N.c                           0x00000000   Number         0  system_sam3n.o ABSOLUTE
+    RESET                                    0x00400000   Section      192  startup_sam3n.o(RESET)
+    .text                                    0x004000c0   Section       64  startup_sam3n.o(.text)
+    .text                                    0x00400100   Section        0  heapauxi.o(.text)
+    [Anonymous Symbol]                       0x00400108   Section        0  system_sam3n.o(.text.SystemInit)
+    mycode                                   0x0040018c   Section      356  master.o(mycode)
+    Heap_Mem                                 0x20000000   Data         512  startup_sam3n.o(HEAP)
+    HEAP                                     0x20000000   Section      512  startup_sam3n.o(HEAP)
+    Stack_Mem                                0x20000200   Data         512  startup_sam3n.o(STACK)
+    STACK                                    0x20000200   Section      512  startup_sam3n.o(STACK)
+    __initial_sp                             0x20000400   Data           0  startup_sam3n.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$EBA8$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00400000   Data           4  startup_sam3n.o(RESET)
+    Reset_Handler                            0x004000c1   Thumb Code     8  startup_sam3n.o(.text)
+    NMI_Handler                              0x004000c9   Thumb Code     2  startup_sam3n.o(.text)
+    HardFault_Handler                        0x004000cb   Thumb Code     2  startup_sam3n.o(.text)
+    MemManage_Handler                        0x004000cd   Thumb Code     2  startup_sam3n.o(.text)
+    BusFault_Handler                         0x004000cf   Thumb Code     2  startup_sam3n.o(.text)
+    UsageFault_Handler                       0x004000d1   Thumb Code     2  startup_sam3n.o(.text)
+    SVC_Handler                              0x004000d3   Thumb Code     2  startup_sam3n.o(.text)
+    DebugMon_Handler                         0x004000d5   Thumb Code     2  startup_sam3n.o(.text)
+    PendSV_Handler                           0x004000d7   Thumb Code     2  startup_sam3n.o(.text)
+    SysTick_Handler                          0x004000d9   Thumb Code     2  startup_sam3n.o(.text)
+    ADC_IRQHandler                           0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    DACC_IRQHandler                          0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    EFC_IRQHandler                           0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    PIOA_IRQHandler                          0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    PIOB_IRQHandler                          0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    PIOC_IRQHandler                          0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    PMC_IRQHandler                           0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    PWM_IRQHandler                           0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    RSTC_IRQHandler                          0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    RTC_IRQHandler                           0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    RTT_IRQHandler                           0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    SPI_IRQHandler                           0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    SUPC_IRQHandler                          0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    TC0_IRQHandler                           0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    TC1_IRQHandler                           0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    TC2_IRQHandler                           0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    TC3_IRQHandler                           0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    TC4_IRQHandler                           0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    TC5_IRQHandler                           0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    TWI0_IRQHandler                          0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    TWI1_IRQHandler                          0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    UART0_IRQHandler                         0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    UART1_IRQHandler                         0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    USART0_IRQHandler                        0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    USART1_IRQHandler                        0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    WDT_IRQHandler                           0x004000db   Thumb Code     0  startup_sam3n.o(.text)
+    __user_initial_stackheap                 0x004000dd   Thumb Code     0  startup_sam3n.o(.text)
+    __use_two_region_memory                  0x00400101   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_escrow$2region                 0x00400103   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_expand$2region                 0x00400105   Thumb Code     2  heapauxi.o(.text)
+    SystemInit                               0x00400109   Thumb Code   132  system_sam3n.o(.text.SystemInit)
+    __main                                   0x0040018d   Thumb Code     0  master.o(mycode)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x0040018d
+
+  Load Region LR_IROM1 (Base: 0x00400000, Size: 0x000002f0, Max: 0x00040000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x00400000, Load base: 0x00400000, Size: 0x000002f0, Max: 0x00040000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00400000   0x00400000   0x000000c0   Data   RO            9    RESET               startup_sam3n.o
+    0x004000c0   0x004000c0   0x00000040   Code   RO           10    .text               startup_sam3n.o
+    0x00400100   0x00400100   0x00000006   Code   RO           28    .text               c_w.l(heapauxi.o)
+    0x00400106   0x00400106   0x00000002   PAD
+    0x00400108   0x00400108   0x00000084   Code   RO           17    .text.SystemInit    system_sam3n.o
+    0x0040018c   0x0040018c   0x00000164   Code   RO            2  * mycode              master.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x004002f0, Size: 0x00000400, Max: 0x00006000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000        -       0x00000200   Zero   RW            8    HEAP                startup_sam3n.o
+    0x20000200        -       0x00000200   Zero   RW            7    STACK               startup_sam3n.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       356         22          0          0          0        352   master.o
+        64         26        192          0       1024        792   startup_sam3n.o
+       132          0          0          0          0       2145   system_sam3n.o
+
+    ----------------------------------------------------------------------
+       552         48        192          0       1024       3289   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         6          0          0          0          0        152   heapauxi.o
+
+    ----------------------------------------------------------------------
+         8          0          0          0          0        152   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+         6          0          0          0          0        152   c_w.l
+
+    ----------------------------------------------------------------------
+         8          0          0          0          0        152   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       560         48        192          0       1024       3441   Grand Totals
+       560         48        192          0       1024       3441   ELF Image Totals
+       560         48        192          0          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                  752 (   0.73kB)
+    Total RW  Size (RW Data + ZI Data)              1024 (   1.00kB)
+    Total ROM Size (Code + RO Data + RW Data)        752 (   0.73kB)
+
+==============================================================================
+
