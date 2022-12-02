@@ -10,5 +10,5 @@ In this semester we will have 4 labs and one project:
 
 code: [Lab1](./LAB%201/ard_code.ino)
 
--[ ] Add Report and simulation
--[ ] Complete Lab manual
+- [ ] Add Report and simulation
+- [ ] Complete Lab manual
