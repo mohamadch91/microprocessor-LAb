@@ -9,6 +9,6 @@ In this semester we will have 4 labs and one project:
 ### PIO and I/O
 
 code: [Lab1](./LAB%201/ard_code.ino)
-
+<br/>
 - [ ] Add Report and simulation
 - [ ] Complete Lab manual
