@@ -78,4 +78,5 @@
 ### Master slave with assembly
 
 > code: [Final project](./FINAL_Project/Micro_2_3_9831125.zip)
+<br/>
 > report: [Lab report](./FINAL_Project/report.pdf)
