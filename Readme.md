@@ -1,6 +1,8 @@
 # AUT Microproccesor and assembley  Course LAB
 
 
+Please star this repo if you like it.
+
 
 
 To see the each semester labs go to the folder and see the readme file
@@ -21,8 +23,9 @@ if you are passed the course and want to add your name to the list please send a
 to the [Students list](Course-Students.md)
 
 
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-
