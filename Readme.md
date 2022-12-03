@@ -1,7 +1,7 @@
 # AUT Microproccesor and assembley  Course LAB
 
 
-Please star this repo if you like it.
+*Please star this repo if you like it.*
 
 
 
