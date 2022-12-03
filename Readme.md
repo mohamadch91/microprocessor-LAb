@@ -1,4 +1,4 @@
-# AUT Microproccesor and assembley  Course LAB
+# AUT Microproccesor and assembly  Course LAB
 
 
 *Please star this repo if you like it.*
