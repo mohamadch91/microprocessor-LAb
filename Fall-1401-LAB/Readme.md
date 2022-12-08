@@ -9,6 +9,8 @@ In this semester we will have 4 labs and one project:
 ### PIO and I/O
 
 > [code](./LAB%201/ard_code.ino)
+<br/>
+
 > [report](./LAB%201/report.pdf)
 
 ## Lab 2
@@ -16,4 +18,5 @@ In this semester we will have 4 labs and one project:
 ### LCD and keypad
 
 > [code](./LAB%202/calculator_1.ino)
+<br/>
 > [report](./LAB%202/report.pdf)
