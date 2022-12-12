@@ -17,6 +17,6 @@ In this semester we will have 4 labs and one project:
 
 ### LCD and keypad
 
-> [code](./LAB%202/calculator_1.ino)
+> [code](./LAB%202/calculator.ino)
 <br/>
 > [report](./LAB%202/report.pdf)
