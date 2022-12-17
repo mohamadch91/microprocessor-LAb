@@ -30,6 +30,7 @@ int steps = 1;
 void setup() {
   myservo.attach(9,1000,2000);
   keypad.addEventListener(keypadEvent);
+  Serial.begin(9600);
   pinMode(outPin, OUTPUT);    
   degree = 0;
   input = "";
@@ -47,10 +48,13 @@ void keypadEvent(KeypadEvent key){
   if(keypad.getState() == PRESSED){
     if(key >= '0' && key <= '9'){
       input += key;
+      Serial.println(input);
     }
     if(key == '='){
       degree = input.toInt();
+      Serial.println(degree);
       degree = degree/2;
+      Serial.println(degree);
       myservo.write(degree);
       if( degree >=90){
         digitalWrite(outPin, 1);
