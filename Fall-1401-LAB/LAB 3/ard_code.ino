@@ -3,6 +3,8 @@
 
 const byte rows = 4; //four rows
 const byte cols = 4; //four columns
+const byte outPin = 0,
+
 char keys[rows][cols] = {
   {'7','8','9','/'},
   {'4','5','6', '*'},
@@ -28,12 +30,14 @@ int steps = 1;
 void setup() {
   myservo.attach(9,1000,2000);
   keypad.addEventListener(keypadEvent);
+  pinMode(outPin, OUTPUT);    
   degree = 0;
   input = "";
 }
 
 void loop() {
   char key = keypad.getKey();
+
 }
 
 
@@ -48,6 +52,12 @@ void keypadEvent(KeypadEvent key){
       degree = input.toInt();
       degree = degree/2;
       myservo.write(degree);
+      if( degree >=90){
+        digitalWrite(outPin, 1);
+      }
+      else{
+        digitalWrite(outPin, 0);
+      }
       input = "";
     }
   }
