@@ -3,7 +3,7 @@
 
 const byte rows = 4; //four rows
 const byte cols = 4; //four columns
-const byte outPin = 0,
+const byte outPin = 0;
 
 char keys[rows][cols] = {
   {'7','8','9','/'},
