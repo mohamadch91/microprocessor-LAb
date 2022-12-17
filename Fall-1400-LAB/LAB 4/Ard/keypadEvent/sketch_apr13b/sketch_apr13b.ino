@@ -52,7 +52,7 @@ void keypadEvent(KeypadEvent key){
       Serial.print("Result: ");
       Serial.println(degree - 180);
       degree = degree/2;
-      myservo.write(degree);
+      myservo.write(daegree);
       Serial.println();
       input = "";
     }
