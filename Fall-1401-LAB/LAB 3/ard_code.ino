@@ -27,7 +27,6 @@ int steps = 1;
 
 void setup() {
   myservo.attach(9,1000,2000);
-  Serial.begin(9600);
   keypad.addEventListener(keypadEvent);
   degree = 0;
   input = "";
@@ -43,17 +42,12 @@ void loop() {
 void keypadEvent(KeypadEvent key){
   if(keypad.getState() == PRESSED){
     if(key >= '0' && key <= '9'){
-      Serial.print(key);
       input += key;
     }
     if(key == '='){
       degree = input.toInt();
-      Serial.println();
-      Serial.print("Result: ");
-      Serial.println(degree - 180);
       degree = degree/2;
       myservo.write(degree);
-      Serial.println();
       input = "";
     }
   }
