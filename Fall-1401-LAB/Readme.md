@@ -18,7 +18,9 @@ In this semester we will have 4 labs and one project:
 ### LCD and keypad
 
 > [Manual](./LAB%202/MicroLab2.pdf)
+
 > [code](./LAB%202/calculator.ino)
+
 > [report](./LAB%202/report.pdf)
 
 ## Lab 3
