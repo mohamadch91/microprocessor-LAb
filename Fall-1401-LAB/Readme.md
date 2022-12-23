@@ -7,6 +7,7 @@ In this semester we will have 4 labs and one project:
 ## Lab 1
 
 ### PIO and I/O
+> [Manual](./LAB%201/MicroLAB1.pdf)
 
 > [code](./LAB%201/ard_code.ino)
 <br/>
@@ -17,6 +18,18 @@ In this semester we will have 4 labs and one project:
 
 ### LCD and keypad
 
+> [Manual](./LAB%202/MicroLab2.pdf)
 > [code](./LAB%202/calculator.ino)
 <br/>
+
 > [report](./LAB%202/report.pdf)
+
+## Lab 3
+
+### Reley and servo
+> [Manual](./LAB%203/MicroLab3.pdf)
+
+> [code](./LAB%203/ard_code.ino)
+<br/>
+  
+
