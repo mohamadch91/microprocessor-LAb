@@ -32,3 +32,9 @@ In this semester we will have 4 labs and one project:
 > [report](./LAB%203/report.pdf)
   
 
+## Lab 4
+
+### Buzzer with Relay
+
+> [Manual](./LAB%204/MicroLab4.pdf)
+> 
